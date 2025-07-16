@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +9,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://miro.medium.com/v2/resize:fit:1358/1*jHLz9MczsYg8wI9WTlpCIA.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Optionally add: */
+  /* background-attachment: fixed; */
 }
 
 code {

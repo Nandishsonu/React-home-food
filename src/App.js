@@ -7,6 +7,7 @@ import Cart from './Cart';
 import Payment from './Payment';
 import OTP from './OTP';
 import { CartProvider } from './CartContext';
+import Location from './Location';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/payment" element={<Payment />} />
+          <Route path="/location" element={<Location />} />
         </Routes>
       </Router>
     </CartProvider>

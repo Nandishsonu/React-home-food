@@ -146,7 +146,16 @@ function Menu() {
         {/* User Info Bar */}
         <div style={{ display: 'flex', alignItems: 'center', marginBottom: 18 }}>
           <div style={{ marginRight: 'auto' }}>
-            <div style={{ fontWeight: 700, color: '#ff9800', fontSize: '1.1rem' }}>John Doe</div>
+            <div style={{ fontWeight: 700, color: '#ff9800', fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: 4 }}>
+              John Doe
+              <span
+                style={{ cursor: 'pointer', fontSize: '1.1em' }}
+                title="Change area"
+                onClick={() => navigate('/location')}
+              >
+                🔻
+              </span>
+            </div>
             <div style={{ color: '#6d4c41', fontSize: '1rem' }}>123 Main Street, City</div>
           </div>
           <div style={{ marginLeft: 'auto', background: '#fdeedc', borderRadius: '50%', width: 36, height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

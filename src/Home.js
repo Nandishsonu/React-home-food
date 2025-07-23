@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function Home() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigate('/signin');
+    }, 10000);
+    return () => clearTimeout(timer);
+  }, [navigate]);
+
   return (
     <div style={{
       background: '#fff8f0',
